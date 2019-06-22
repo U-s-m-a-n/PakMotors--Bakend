@@ -44,7 +44,13 @@ router.post("/", async (req, res)=>{
 router.put('/:id', async (req, res)=>{
 
     const sale = await Sale.findByIdAndUpdate(req.params.id, {
-            buyer_id: req.body.buyer_id
+            buyer_id:req.body.buyer_id,
+            seller_id: req.body.seller_id,
+            car_id: req.body.car_id,
+            witness1: req.body.witness1,
+            witness2: req.body.witness2,
+            paymentDetails: req.body.paymentDetails,
+            date: req.body.date,
         },
         { new:true });
 

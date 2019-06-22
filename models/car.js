@@ -36,10 +36,10 @@ const carSchema = mongoose.Schema({
     registration: {
         type: String
     },
+
     isSold: {
         type: Boolean
     }
-
 });
 
 const Car = mongoose.model('Car',carSchema);

@@ -7,9 +7,12 @@ const router = express();
 
 router.get("/", async (req, res) =>{
 
-    const cars = await Car.find().sort('v_name');
+    const cars = await Car.find();//.sort('v_name');
     res.send(cars);
 });
+
+
+
 
 
 router.get("/:id", async (req, res)=>{
@@ -46,7 +49,14 @@ router.post("/", async (req, res)=>{
 router.put('/:id', async (req, res)=>{
 
     const car = await Car.findByIdAndUpdate(req.params.id, {
-            v_name: req.body.v_name
+            v_name:req.body.v_name,
+            horse_power: req.body.horse_power,
+            color: req.body.color,
+            kota: req.body.kota,
+            model: req.body.model,
+            chasis: req.body.chasis,
+            engine: req.body.engine,
+            registration: req.body.registration
         },
         { new:true });
 

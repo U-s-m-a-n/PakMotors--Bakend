@@ -30,6 +30,7 @@ router.post("/", async (req, res)=>{
     let person = new Person ({
         name:req.body.name,
         f_name: req.body.f_name,
+        image: req.body.image,
         cast: req.body.cast,
         cnic: req.body.cnic,
         address: req.body.address,
@@ -46,8 +47,17 @@ router.post("/", async (req, res)=>{
 
 router.put('/:id', async (req, res)=>{
     const person = await Person.findByIdAndUpdate(req.params.id, {
-        name: req.body.name
-    },
+            name:req.body.name,
+            f_name: req.body.f_name,
+            image: req.body.image,
+            cast: req.body.cast,
+            cnic: req.body.cnic,
+            address: req.body.address,
+            mobile: req.body.mobile,
+            isSeller: req.body.isSeller,
+            isBuyer: req.body.isBuyer
+
+        },
         { new:true });
 
     if(!person){

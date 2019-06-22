@@ -1,5 +1,6 @@
 
 const mongoose = require('mongoose');
+
 //const Joi = require("joi");
 
 const personSchema = mongoose.Schema({
@@ -10,6 +11,10 @@ const personSchema = mongoose.Schema({
     },
 
     f_name:{
+        type: String
+    },
+
+    image: {
         type: String
     },
 
