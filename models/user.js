@@ -20,10 +20,12 @@ const usersSchema = mongoose.Schema({
 
 
 });
+module.exports = mongoose.model('User', usersSchema);
 
-const User = mongoose.model('User', usersSchema);
 
-module.exports.User = User;
+// const User = mongoose.model('User', usersSchema);
+
+// module.exports.User = User;
 
 
 

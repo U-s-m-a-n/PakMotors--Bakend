@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 var transactionSchema = new mongoose.Schema({
 
             depositedAmount : Number,
-            date : Date,
+            transactionDate : Date,
             accountId: mongoose.Schema.Types.ObjectId
 });
 var paymentSchema = new mongoose.Schema({
@@ -45,9 +45,12 @@ const salesSchema = mongoose.Schema({
 
 });
 
-const Sale = mongoose.model('Sale',salesSchema);
 
-module.exports.Sale = Sale;
+module.exports = mongoose.model('Sale',salesSchema);
+
+// const Sale = mongoose.model('Sale',salesSchema);
+
+// module.exports.Sale = Sale;
 
 
 

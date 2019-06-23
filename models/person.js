@@ -23,10 +23,8 @@ const personSchema = mongoose.Schema({
     },
 
     cnic:{
-        type: Number,
-        required: true,
-        minlength:13,
-        maxlength:13
+        type: String,
+        required: true
     },
 
     address:{
@@ -51,11 +49,13 @@ const personSchema = mongoose.Schema({
 
 });
 
+module.exports = mongoose.model('Person',personSchema);
 
-const Person = mongoose.model('Person',personSchema);
+
+// const Person = mongoose.model('Person',personSchema);
 
 
-module.exports.Person = Person;
+// module.exports.Person = Person;
 
 
 
