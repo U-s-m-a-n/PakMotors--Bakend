@@ -27,6 +27,15 @@ input personInput {
     isBuyer: Boolean
     isWitness:Boolean
 }
+input personId{
+    _id: String!
+}
+input personCNIC{
+    _id: String!
+}
+input personName{
+    _id: String!
+}
 
 
 
@@ -60,6 +69,35 @@ input carInput {
     registration: String
     isSold: Boolean
 }
+input carId{
+    _id: String!
+}
+input horsePower{
+    _id: Int!
+}
+input modelNumber{
+    _id: String!
+}
+input chasisNumber{
+    _id: String!
+}
+input engineNumber{
+    _id: String!
+}
+input registrationNumber{
+    _id: String!
+}
+input isSold{
+    _id: Boolean!
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -82,6 +120,9 @@ type Account {
     date: String
     note:String
  }
+ input accountId{
+    _id: String!
+}
 
 
 
@@ -125,6 +166,19 @@ input saleInput {
     transactionDate: String
     accountId: String
 } 
+input saleId{
+    _id: String!
+}
+input saleBuyerId{
+    _id: String!
+}
+input saleSellerId{
+    _id: String!
+}
+input saleCarId{
+    _id: String!
+}
+
 
 
 
@@ -145,6 +199,9 @@ input userInput{
     password: String
     accountId: String
 }
+input userId{
+    _id: String!
+}
 
 
 
@@ -161,10 +218,36 @@ type rootQuery {
 
 type rootMutation {
     createCar(carValues: carInput): Car
+    findCarById(id: carId): [Car!]!
+    findCarByHorsePower(id: horsePower): [Car!]!
+    findCarByModel(id: modelNumber): [Car!]!
+    findCarByChasis(id: chasisNumber): [Car!]!
+    findCarByEngine(id: engineNumber): [Car!]!
+    findCarByRegistration(id: registrationNumber): [Car!]!
+    findCarByIsSold(id: isSold): [Car!]!
+
     createPerson(personValues: personInput): Person
+    findPersonById(id: personId) : Person
+    findPersonByCNIC(id: personCNIC) : [Person!]!
+    findPersonByName(id: personName) : [Person!]!
+
+
     createAccount(accountValues: accountInput): Account
+    findAccountById(id: accountId): Account
+
     createSale(saleValues: saleInput): Sale
+    findSaleById(id: saleId): Sale
+    findSaleByBuyerId(id: saleBuyerId): [Sale!]!
+    findSaleBySellerId(id: saleSellerId): [Sale!]!
+    findSaleByCarId(id: saleCarId): [Sale!]!
+
+
+
+
+
+
     createUser(userValues: userInput): User
+    findUserById(id: userId): User
 }
 
 

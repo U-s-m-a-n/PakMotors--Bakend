@@ -34,5 +34,23 @@ module.exports = {
                 console.log(err);
             });
         return personSaved;
+    },
+
+    findPersonById:  (args)=>{
+        return Person.findOne({_id : args.id._id})
+        .then((result)=>{
+          console.log(result);
+          return {...result._doc}; 
+      } )
+      .catch((err)=>{
+          console.log(err);
+      });
+    },
+    findPersonByCNIC: (args) => {
+        return Person.find({ cnic: args.id._id });
+    },
+    findPersonByName: (args) => {
+        return Person.find({ name: args.id._id });
     }
+
 };
