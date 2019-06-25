@@ -6,7 +6,7 @@ type Person {
     _id: ID!
     name: String
     f_name: String
-    image: String
+    image: [String]
     cast: String
     cnic: String
     address: String
@@ -14,11 +14,12 @@ type Person {
     isSeller: Boolean
     isBuyer: Boolean
     isWitness:Boolean
+    
 }
 input personInput {
     name: String
     f_name: String
-    image: String
+    image: [String]
     cast: String
     cnic: String
     address: String
@@ -158,7 +159,7 @@ input saleInput {
     car_id: String
     witness1: String
     witness2: String
-    date: String
+    
 
     totalAmount:Int
 

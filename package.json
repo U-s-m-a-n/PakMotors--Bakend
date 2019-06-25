@@ -13,10 +13,14 @@
     "graphql": "^14.3.1",
     "http-errors": "~1.6.3",
     "joi": "^14.3.1",
+    "jsreport-chrome-pdf": "^1.4.0",
+    "jsreport-core": "^2.5.0",
+    "jsreport-handlebars": "^2.0.2",
     "mongodb": "^3.2.7",
     "mongoose": "^5.6.0",
     "morgan": "~1.9.1",
-    "pug": "2.0.0-beta11"
+    "pug": "2.0.0-beta11",
+    "puppeteer": "^1.18.0"
   },
   "main": "prac_Docs/app.js",
   "devDependencies": {},

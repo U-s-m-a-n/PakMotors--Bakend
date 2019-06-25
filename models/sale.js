@@ -48,9 +48,9 @@ const salesSchema = mongoose.Schema({
 
 module.exports = mongoose.model('Sale',salesSchema);
 
-// const Sale = mongoose.model('Sale',salesSchema);
+const Sale = mongoose.model('Sale',salesSchema);
 
-// module.exports.Sale = Sale;
+module.exports.Sale = Sale;
 
 
 

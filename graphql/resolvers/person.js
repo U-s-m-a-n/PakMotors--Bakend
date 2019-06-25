@@ -23,7 +23,9 @@ module.exports = {
             mobile: args.personValues.mobile,
             isSeller: args.personValues.isSeller,
             isBuyer: args.personValues.isBuyer,
-            isWitness: args.personValues.isWitness
+            isWitness: args.personValues.isWitness,
+
+
         });
         const personSaved = await person.save()
             .then((result) => {

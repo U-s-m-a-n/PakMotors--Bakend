@@ -15,7 +15,7 @@ const personSchema = mongoose.Schema({
     },
 
     image: {
-        type: String
+        type: Array
     },
 
     cast:{
@@ -52,10 +52,10 @@ const personSchema = mongoose.Schema({
 module.exports = mongoose.model('Person',personSchema);
 
 
-// const Person = mongoose.model('Person',personSchema);
+const Person = mongoose.model('Person',personSchema);
 
 
-// module.exports.Person = Person;
+module.exports.Person = Person;
 
 
 

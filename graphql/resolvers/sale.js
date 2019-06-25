@@ -15,7 +15,7 @@ module.exports = {
 
         const saleTransaction ={
             depositedAmount:  args.saleValues.depositedAmount,
-            transactionDate:  args.saleValues.transactionDate,
+            transactionDate:  new Date().toString(),
             accountId:  args.saleValues.accountId
         }
         const salePayment = {
@@ -30,7 +30,7 @@ module.exports = {
             witness1: args.saleValues.witness1,
             witness2: args.saleValues.witness2,
             paymentDetails: salePayment,
-            date: args.saleValues.date
+            date: new Date().toString()
         });
         const saleSaved = await sale.save()
             .then((result) => {

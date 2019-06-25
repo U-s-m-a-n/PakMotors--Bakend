@@ -1,27 +1,22 @@
-var bogy = {query:`mutation{
-    createPerson(personValues:{
-          name : "14"
-      f_name:"ewfcda"
-      image:"wfd"
-      cast:"wefe"
-      cnic:"efascdc"
-      address:"wfeeewef"
-      mobile:["dqwcsac","fwefswfe"]
-      isSeller:true
-      isBuyer:false
-      isWitness:true
-  
-    }) {
-      name
-      f_name
-      image
-      cast
-      cnic
-      address
-      isSeller
-      isBuyer
-      isWitness
+const jsreport = require('jsreport-core')();
+const fs = require('fs');
+
+
+
+jsreport.init().then(() => {
+  jsreport.render({
+    template: {
+      content: '<h1>Hello {{foo}}</h1>',
+      engine: 'handlebars',
+      recipe: 'chrome-pdf'
+    },
+    data: {
+      foo: "world"
     }
-  }`};
-  var result = JSON.stringify(bogy);
-console.log(result);
+  }).then((resp) => {
+    // write report buffer to a file
+    fs.writeFileSync('report.pdf', resp.content)
+  });
+}).catch((e) => {
+  console.log(e)
+});

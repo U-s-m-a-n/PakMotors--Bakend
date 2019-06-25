@@ -5,6 +5,9 @@ const graphQlSchema = require('./graphql/schema/index');
 const graphQlResolvers = require('./graphql/resolvers/index');
 
 const app = express();
+
+const salesPDF = require('./routes/salesPDF');
+
 ///------------------------------------------------------///
 // const persons = require('./routes/persons');
 // const cars = require('./routes/cars');
@@ -33,6 +36,7 @@ app.use((req, res, next)=>{
     }
     next();
 });
+app.use("/pakMotors/salesPDF", salesPDF);
 
 app.use(
     '/graphql',
