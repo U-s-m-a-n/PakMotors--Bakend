@@ -1,0 +1,130 @@
+2019-06-26T08:20:55.135Z - info: Initializing jsreport@2.5.0 in development mode using configuration file: none
+2019-06-26T08:20:55.137Z - info: Searching for available extensions in C:\Users\Hafsa\WebstormProjects\PakMotors\
+2019-06-26T08:20:55.139Z - info: jsreport instance has been closed
+2019-06-26T08:20:55.146Z - info: Extensions location cache contains up to date information, skipping crawling in C:\Users\Hafsa\WebstormProjects\PakMotors\
+2019-06-26T08:20:55.173Z - info: Found 31 extensions
+2019-06-26T08:20:55.206Z - debug: Writing extension locations cache to C:\Users\Hafsa\AppData\Local\Temp\jsreport\core\locations.json
+2019-06-26T08:20:55.208Z - debug: Discovered 31 extensions
+2019-06-26T08:20:55.260Z - info: Setting dedicated-process (process based) strategy for rendering. Please visit http://jsreport.net/learn/configuration for information how to get more performance.
+2019-06-26T08:20:55.267Z - info: Using extension import-export@1.3.0
+2019-06-26T08:20:55.510Z - info: Using extension tags@2.2.0
+2019-06-26T08:20:55.513Z - info: Using extension templates@2.2.0
+2019-06-26T08:20:55.516Z - info: Using extension jsrender@2.0.0
+2019-06-26T08:20:55.517Z - info: Using extension authentication@2.2.3
+2019-06-26T08:20:55.559Z - debug: Extension authentication@2.2.3 was disabled
+2019-06-26T08:20:55.559Z - info: Using extension handlebars@2.0.2
+2019-06-26T08:20:55.562Z - info: Using extension cli@2.0.7
+2019-06-26T08:20:55.563Z - info: Using extension freeze@2.0.0
+2019-06-26T08:20:55.565Z - info: Using extension debug@2.0.2
+2019-06-26T08:20:55.567Z - info: Using extension express@2.4.0
+2019-06-26T08:20:55.685Z - info: Using extension pdf-utils@1.4.0
+2019-06-26T08:20:55.935Z - info: Using extension data@2.1.0
+2019-06-26T08:20:55.937Z - info: Using extension chrome-pdf@1.4.0
+2019-06-26T08:20:56.046Z - debug: Chrome strategy is dedicated-process
+2019-06-26T08:20:56.047Z - info: Using extension child-templates@1.2.0
+2019-06-26T08:20:56.103Z - info: Using extension browser-client@2.1.1
+2019-06-26T08:20:56.106Z - info: Using extension licensing@2.1.0
+2019-06-26T08:20:56.156Z - info: Using extension authorization@2.2.4
+2019-06-26T08:20:56.161Z - debug: Extension authorization@2.2.4 was disabled
+2019-06-26T08:20:56.162Z - info: Using extension version-control@1.2.3
+2019-06-26T08:20:56.294Z - info: Using extension reports@2.2.0
+2019-06-26T08:20:56.300Z - info: Using extension text@2.0.0
+2019-06-26T08:20:56.302Z - info: Using extension base@2.0.2
+2019-06-26T08:20:56.305Z - info: Using extension studio@2.5.1
+2019-06-26T08:20:56.456Z - debug: studio request logs are enabled (flush interval: 2000)
+2019-06-26T08:20:56.458Z - info: Using extension fs-store@2.4.1
+2019-06-26T08:20:57.152Z - debug: Extension fs-store@2.4.1 was disabled
+2019-06-26T08:20:57.153Z - info: Using extension scheduling@2.0.7
+2019-06-26T08:20:57.310Z - info: Using extension scripts@2.1.0
+2019-06-26T08:20:57.413Z - info: Using extension assets@1.1.3
+2019-06-26T08:20:57.504Z - info: Using extension html-to-xlsx@2.3.1
+2019-06-26T08:20:57.685Z - info: html-to-xlsx detected chrome as available html engine
+2019-06-26T08:20:57.686Z - info: Using extension xlsx@2.0.10
+2019-06-26T08:20:57.902Z - info: Using extension sample-template@2.3.0
+2019-06-26T08:20:57.905Z - info: Using extension resources@2.0.3
+2019-06-26T08:20:57.907Z - info: Using extension public-templates@2.0.1
+2019-06-26T08:20:57.909Z - debug: Extension public-templates@2.0.1 was disabled
+2019-06-26T08:20:57.910Z - info: Using memory provider for template store. The saved templates will be lost after restart
+2019-06-26T08:20:57.947Z - info: Creating default express app.
+2019-06-26T08:20:57.969Z - info: jsreport server successfully started on http port: 5488
+2019-06-26T08:20:57.977Z - info: Verifying license key free
+2019-06-26T08:20:57.981Z - info: Using free license
+2019-06-26T08:20:57.989Z - debug: Creating samples is disabled
+2019-06-26T08:20:57.994Z - info: reporter initialized
+2019-06-26T08:20:58.021Z - info: Starting rendering request 1 (user: null)
+2019-06-26T08:20:58.031Z - info: Rendering anonymous template { recipe: chrome-pdf, engine: handlebars }
+2019-06-26T08:20:58.034Z - debug: Inline data specified.
+2019-06-26T08:20:58.037Z - debug: Resources not defined for this template.
+2019-06-26T08:20:58.121Z - debug: Base url not specified, skipping its injection.
+2019-06-26T08:20:58.125Z - debug: Rendering engine handlebars
+2019-06-26T08:20:58.572Z - debug: Compiled template not found in the cache, compiling
+2019-06-26T08:20:58.575Z - debug: Executing recipe chrome-pdf
+2019-06-26T08:20:58.739Z - debug: Converting with chrome HeadlessChrome/77.0.3827.0 using dedicated-process strategy
+2019-06-26T08:20:59.020Z - debug: Running chrome with params {"margin":{},"printBackground":true}
+2019-06-26T08:20:59.408Z - debug: Skipping storing report.
+2019-06-26T08:20:59.409Z - info: Rendering request 1 finished in 1390 ms
+2019-06-26T09:24:12.737Z - info: Initializing jsreport@2.5.0 in development mode using configuration file: none
+2019-06-26T09:24:12.739Z - info: Searching for available extensions in C:\Users\Hafsa\WebstormProjects\PakMotors\
+2019-06-26T09:24:12.743Z - info: jsreport instance has been closed
+2019-06-26T09:24:12.750Z - info: Extensions location cache C:\Users\Hafsa\AppData\Local\Temp\jsreport\core\locations.json contains older information, crawling
+2019-06-26T09:24:14.235Z - info: Found 31 extensions
+2019-06-26T09:24:14.261Z - debug: Writing extension locations cache to C:\Users\Hafsa\AppData\Local\Temp\jsreport\core\locations.json
+2019-06-26T09:24:14.263Z - debug: Discovered 31 extensions
+2019-06-26T09:24:14.350Z - info: Setting dedicated-process (process based) strategy for rendering. Please visit http://jsreport.net/learn/configuration for information how to get more performance.
+2019-06-26T09:24:14.357Z - info: Using extension import-export@1.3.0
+2019-06-26T09:24:14.651Z - info: Using extension tags@2.2.0
+2019-06-26T09:24:14.655Z - info: Using extension templates@2.2.0
+2019-06-26T09:24:14.658Z - info: Using extension jsrender@2.0.0
+2019-06-26T09:24:14.659Z - info: Using extension authentication@2.2.3
+2019-06-26T09:24:14.704Z - debug: Extension authentication@2.2.3 was disabled
+2019-06-26T09:24:14.704Z - info: Using extension handlebars@2.0.2
+2019-06-26T09:24:14.707Z - info: Using extension cli@2.0.7
+2019-06-26T09:24:14.708Z - info: Using extension freeze@2.0.0
+2019-06-26T09:24:14.711Z - info: Using extension debug@2.0.2
+2019-06-26T09:24:14.714Z - info: Using extension express@2.4.0
+2019-06-26T09:24:14.848Z - info: Using extension pdf-utils@1.4.0
+2019-06-26T09:24:15.103Z - info: Using extension data@2.1.0
+2019-06-26T09:24:15.112Z - info: Using extension chrome-pdf@1.4.0
+2019-06-26T09:24:15.235Z - debug: Chrome strategy is dedicated-process
+2019-06-26T09:24:15.236Z - info: Using extension child-templates@1.2.0
+2019-06-26T09:24:15.295Z - info: Using extension browser-client@2.1.1
+2019-06-26T09:24:15.298Z - info: Using extension licensing@2.1.0
+2019-06-26T09:24:15.351Z - info: Using extension authorization@2.2.4
+2019-06-26T09:24:15.357Z - debug: Extension authorization@2.2.4 was disabled
+2019-06-26T09:24:15.358Z - info: Using extension version-control@1.2.3
+2019-06-26T09:24:15.492Z - info: Using extension reports@2.2.0
+2019-06-26T09:24:15.498Z - info: Using extension text@2.0.0
+2019-06-26T09:24:15.499Z - info: Using extension base@2.0.2
+2019-06-26T09:24:15.501Z - info: Using extension studio@2.5.1
+2019-06-26T09:24:15.571Z - debug: studio request logs are enabled (flush interval: 2000)
+2019-06-26T09:24:15.572Z - info: Using extension fs-store@2.4.1
+2019-06-26T09:24:15.971Z - debug: Extension fs-store@2.4.1 was disabled
+2019-06-26T09:24:15.972Z - info: Using extension scheduling@2.0.7
+2019-06-26T09:24:16.033Z - info: Using extension scripts@2.1.0
+2019-06-26T09:24:16.086Z - info: Using extension assets@1.1.4
+2019-06-26T09:24:16.156Z - info: Using extension html-to-xlsx@2.3.1
+2019-06-26T09:24:16.327Z - info: html-to-xlsx detected chrome as available html engine
+2019-06-26T09:24:16.327Z - info: Using extension xlsx@2.0.10
+2019-06-26T09:24:16.525Z - info: Using extension sample-template@2.3.0
+2019-06-26T09:24:16.528Z - info: Using extension resources@2.0.3
+2019-06-26T09:24:16.530Z - info: Using extension public-templates@2.0.1
+2019-06-26T09:24:16.532Z - debug: Extension public-templates@2.0.1 was disabled
+2019-06-26T09:24:16.533Z - info: Using memory provider for template store. The saved templates will be lost after restart
+2019-06-26T09:24:16.581Z - info: Creating default express app.
+2019-06-26T09:24:16.611Z - info: jsreport server successfully started on http port: 5488
+2019-06-26T09:24:16.613Z - info: Verifying license key free
+2019-06-26T09:24:16.615Z - info: Using free license
+2019-06-26T09:24:16.619Z - debug: Creating samples is disabled
+2019-06-26T09:24:16.620Z - info: reporter initialized
+2019-06-26T09:24:16.634Z - info: Starting rendering request 1 (user: null)
+2019-06-26T09:24:16.635Z - info: Rendering anonymous template { recipe: chrome-pdf, engine: handlebars }
+2019-06-26T09:24:16.636Z - debug: Inline data specified.
+2019-06-26T09:24:16.637Z - debug: Resources not defined for this template.
+2019-06-26T09:24:16.647Z - debug: Base url not specified, skipping its injection.
+2019-06-26T09:24:16.648Z - debug: Rendering engine handlebars
+2019-06-26T09:24:16.910Z - debug: Compiled template not found in the cache, compiling
+2019-06-26T09:24:16.913Z - debug: Executing recipe chrome-pdf
+2019-06-26T09:24:17.052Z - debug: Converting with chrome HeadlessChrome/77.0.3827.0 using dedicated-process strategy
+2019-06-26T09:24:17.224Z - debug: Running chrome with params {"margin":{},"printBackground":true}
+2019-06-26T09:24:17.609Z - debug: Skipping storing report.
+2019-06-26T09:24:17.610Z - info: Rendering request 1 finished in 976 ms
