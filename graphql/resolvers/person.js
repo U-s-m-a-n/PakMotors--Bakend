@@ -4,7 +4,7 @@ const Person = require('../../models/person');
 module.exports = {
     persons: async () => {
         try {
-            const persons = await Person.find();
+            const persons = await Person.find().sort({ $natural: -1 });
             return persons;
         } catch (err) {
             throw err;
@@ -53,6 +53,12 @@ module.exports = {
     },
     findPersonByName: (args) => {
         return Person.find({ name: args.id._id });
+    },
+    findAllSellers:  (args)=>{
+        return Person.find({isSeller : args.id._id});
+    },
+    findAllBuyers:  (args)=>{
+        return Person.find({isBuyer : args.id._id});
     }
 
 };

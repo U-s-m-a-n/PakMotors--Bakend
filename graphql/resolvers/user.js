@@ -3,7 +3,7 @@ const User = require('../../models/user');
 module.exports = {
     users: async () => {
         try {
-            const users = await User.find();
+            const users = await User.find().sort({ $natural: -1 });
             return users;
         } catch (err) {
             throw err;

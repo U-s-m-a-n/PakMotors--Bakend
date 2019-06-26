@@ -37,6 +37,13 @@ input personCNIC{
 input personName{
     _id: String!
 }
+input IsSeller{
+    _id: Boolean
+}
+input IsBuyer{
+    _id: Boolean
+}
+
 
 
 
@@ -57,6 +64,7 @@ type Car {
     chasis: String
     engine: String
     registration: String
+    image:[String]
     isSold: Boolean
 }
 input carInput {
@@ -68,6 +76,7 @@ input carInput {
     chasis: String
     engine: String
     registration: String
+    image:[String]
     isSold: Boolean
 }
 input carId{
@@ -231,6 +240,9 @@ type rootMutation {
     findPersonById(id: personId) : Person
     findPersonByCNIC(id: personCNIC) : [Person!]!
     findPersonByName(id: personName) : [Person!]!
+    findAllSellers(id: IsSeller):[Person!]!
+    findAllBuyers(id: IsBuyer):[Person!]!
+
 
 
     createAccount(accountValues: accountInput): Account

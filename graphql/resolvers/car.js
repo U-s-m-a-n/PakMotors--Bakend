@@ -4,7 +4,7 @@ const Car = require('../../models/car');
 module.exports = {
 
     cars: () => {
-        return Car.find();
+        return Car.find().sort({ $natural: -1 });
     },
 
     createCar: async (args) => {
@@ -18,6 +18,7 @@ module.exports = {
             chasis: args.carValues.chasis,
             engine: args.carValues.engine,
             registration: args.carValues.registration,
+            image:args.carValues.image,
             isSold: args.carValues.isSold
         });
 

@@ -6,7 +6,7 @@ const graphQlResolvers = require('./graphql/resolvers/index');
 
 const app = express();
 
-const salesPDF = require('./routes/salesPDF');
+const report = require('./routes/report');
 
 ///------------------------------------------------------///
 // const persons = require('./routes/persons');
@@ -36,7 +36,7 @@ app.use((req, res, next)=>{
     }
     next();
 });
-app.use("/pakMotors/salesPDF", salesPDF);
+app.use("/pakMotors/report", report);
 
 app.use(
     '/graphql',
@@ -53,7 +53,6 @@ app.use(
 // app.use('/pakMotors/users', users);
 // app.use('/pakMotors/accounts', accounts);
 // app.use("/", home);
-
 
 app.listen(process.env.PORT || 3000, () => {
     console.log(`Listening on port 3000`);

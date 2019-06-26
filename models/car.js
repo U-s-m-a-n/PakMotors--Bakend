@@ -36,6 +36,9 @@ const carSchema = mongoose.Schema({
     registration: {
         type: String
     },
+    image:{
+        type: Array
+    },
 
     isSold: {
         type: Boolean

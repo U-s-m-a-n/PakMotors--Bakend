@@ -4,7 +4,7 @@ const Sale = require('../../models/sale');
 module.exports = {
     sales: async () => {
         try {
-            const sales = await Sale.find();
+            const sales = await Sale.find().sort({ $natural: -1 });
             return sales;
         } catch (err) {
             throw err;

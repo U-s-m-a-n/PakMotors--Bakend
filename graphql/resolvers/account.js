@@ -4,7 +4,7 @@ const Account = require('../../models/account');
 module.exports = {
     accounts: async () => {
         try {
-            const accounts = await Account.find();
+            const accounts = await Account.find().sort({ $natural: -1 });
             return accounts;
         } catch (err) {
             throw err;
