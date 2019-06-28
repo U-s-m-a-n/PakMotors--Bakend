@@ -150,36 +150,36 @@ const router = express();
 
 router.get("/:id/delivery-order", async (req, res) =>{
     try {
-        const sales = await Sale.findById(req.params.id);
-        const buyer = await Person.findById(sales.buyer_id.toString());
-        const car = await Car.findById(sales.car_id.toString());
+        // const sales = await Sale.findById(req.params.id);
+        // const buyer = await Person.findById(sales.buyer_id.toString());
+        // const car = await Car.findById(sales.car_id.toString());
         // const data = [sales, buyer, car];
 
 
         jsreport.init().then(() => {
             jsreport.render({
                 template: {
-                    content: fs.readFileSync(__dirname + "/../documents/delivery-order-form.html") + "",
+                    content: fs.readFileSync(__dirname + "/../documents/salesLetter.html") + "",
                     engine: 'handlebars',
                     recipe: 'chrome-pdf'
                 },
                 data: {
-                    customer: {
-                        name: buyer.name,
-                        father_name: buyer.f_name,
-                        address: buyer.address,
-                        city: buyer.address,
-                        cnic: buyer.cnic,
-                        telephone: buyer.mobile[0]
-                    },
-
-                    vehicle: {
-                        name: car.v_name,
-                        model: car.model,
-                        color: car.color,
-                        engine: car.engine,
-                        chasis: car.chasis
-                    }
+                    // customer: {
+                    //     name: buyer.name,
+                    //     father_name: buyer.f_name,
+                    //     address: buyer.address,
+                    //     city: buyer.address,
+                    //     cnic: buyer.cnic,
+                    //     telephone: buyer.mobile[0]
+                    // },
+                    //
+                    // vehicle: {
+                    //     name: car.v_name,
+                    //     model: car.model,
+                    //     color: car.color,
+                    //     engine: car.engine,
+                    //     chasis: car.chasis
+                    // }
                 }
             }).then((resp) => {
                 // write report buffer to a file

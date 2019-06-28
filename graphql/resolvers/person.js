@@ -49,16 +49,16 @@ module.exports = {
       });
     },
     findPersonByCNIC: (args) => {
-        return Person.find({ cnic: args.id._id });
+        return Person.find({ cnic: args.id._id});
     },
     findPersonByName: (args) => {
-        return Person.find({ name: args.id._id });
+        return Person.find({ name: new RegExp("^" + args.id._id + ".*", 'i')});
     },
     findAllSellers:  (args)=>{
-        return Person.find({isSeller : args.id._id});
+        return Person.find({isSeller : args.id._id}).sort({ $natural: -1 });
     },
     findAllBuyers:  (args)=>{
-        return Person.find({isBuyer : args.id._id});
+        return Person.find({isBuyer : args.id._id}).sort({ $natural: -1 });
     }
 
 };
