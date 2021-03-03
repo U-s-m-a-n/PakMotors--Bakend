@@ -21,7 +21,7 @@
     "mongodb": "^3.2.7",
     "mongoose": "^5.6.0",
     "morgan": "~1.9.1",
-    "pug": "2.0.0-beta11",
+    "pug": "3.0.1",
     "puppeteer": "^1.18.0"
   },
   "main": "prac_Docs/app.js",
