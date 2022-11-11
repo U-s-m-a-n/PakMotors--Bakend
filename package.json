@@ -13,7 +13,7 @@
     "graphql": "^14.3.1",
     "http-errors": "~1.6.3",
     "joi": "^14.3.1",
-    "jsreport": "^2.5.0",
+    "jsreport": "^2.11.0",
     "jsreport-assets": "^1.1.4",
     "jsreport-chrome-pdf": "^1.4.0",
     "jsreport-core": "^2.5.0",
